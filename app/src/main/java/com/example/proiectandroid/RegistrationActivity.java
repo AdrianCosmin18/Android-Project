@@ -43,7 +43,7 @@ public class RegistrationActivity extends AppCompatActivity {
     }
 
     private void signUp(String email, String password) {
-        mAuth.signInWithEmailAndPassword(email, password)
+        mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {

@@ -62,6 +62,8 @@ public class LoginActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(LoginActivity.this, "Authentication success." + user.getEmail(),
                                     Toast.LENGTH_SHORT).show();
+
+                            startActivity(new Intent(LoginActivity.this, ProfileActivity.class));
                             finish();
                         } else {
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
@@ -70,5 +72,16 @@ public class LoginActivity extends AppCompatActivity {
                         }
                     }
                 });
+    }
+
+    @Override
+    protected void onStart(){
+        super.onStart();
+
+        FirebaseUser user = mAuth.getCurrentUser();
+        if(user !=  null){
+            startActivity(new Intent(LoginActivity.this, ProfileActivity.class));
+            finish();
+        }
     }
 }
