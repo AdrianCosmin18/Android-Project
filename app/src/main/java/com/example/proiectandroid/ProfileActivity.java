@@ -28,6 +28,15 @@ public class ProfileActivity extends AppCompatActivity {
         TextView welcomeText = findViewById(R.id.welcomeText);
         welcomeText.setText("Welcome : " + user.getEmail());
 
+
+        Button menu = findViewById(R.id.goToMain);
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProfileActivity.this, MainActivity.class));
+            }
+        });
+
         Button logoutButton = findViewById(R.id.buttonLogout);
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
