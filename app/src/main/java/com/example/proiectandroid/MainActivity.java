@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements Adapter.OnItemCli
     }
 
     private void parseJSON(){
-        String url = "https://pixabay.com/api/?key=5303976-fd6581ad4ac165d1b75cc15b3&q=kitten&image_type=photo&pretty=true";
+        String url = "https://pixabay.com/api/?key=36683998-6a7eb178b6d3a23ff8ef11a09&q=food&image_type=photo&pretty=true";
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
                     @Override

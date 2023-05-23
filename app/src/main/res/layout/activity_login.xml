@@ -58,4 +58,20 @@
         android:textSize="16sp"
         android:text="Do not have account ? Register here !"/>
 
+
+    <TextView
+        android:id="@+id/signInWithGoogle"
+        android:layout_width="148dp"
+        android:layout_height="71dp"
+        android:layout_margin="20dp"
+        android:text="Google login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationLink"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
