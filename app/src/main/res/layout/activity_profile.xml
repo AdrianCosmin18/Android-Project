@@ -28,12 +28,22 @@
         android:padding="10dp"
         android:textAllCaps="false"/>
 
-    <Button android:id="@+id/buttonLogout"
+    <Button android:id="@+id/goToNotification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/goToMain"
+        android:text="Notification Settings"
+        android:padding="10dp"
+        android:textAllCaps="false"/>
+
+    <Button android:id="@+id/buttonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goToNotification"
         android:text="Logout"
         android:padding="10dp"
         android:textAllCaps="false"/>

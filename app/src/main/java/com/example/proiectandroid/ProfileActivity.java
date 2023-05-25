@@ -47,5 +47,13 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
+        Button goToNotification = findViewById(R.id.goToNotification);
+        goToNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProfileActivity.this, NotificationActivity.class));
+            }
+        });
+
     }
 }
